@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <style>
+        #body{
+            background-color: bisque;
+            border-style: double;
+            height:100%;
+            width:100%;
+        }
+        #input{
+            margin-left: 600px;
+            margin-top: 100px;
+            background-color: aqua;   
+        }
+        .div{
+            direction: center;
+            margin-left: 600px;
+            margin-top: 10px;
+            
+        }
+        #vish{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #xyz{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #x2{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #two{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #three{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #pluse{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #four{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #five{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #six{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #mainus{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #seven{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #eight{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #nine{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+        #ten{
+            background-color: rgb(201, 186, 215);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            
+        }
+        #equal{
+            background-color: rgb(242, 6, 18);
+            padding-top: 2px;
+            margin-top: 2px;
+            margin-bottom: 2px;
+        }
+    </style>
+    </head>
+    <body id="body">
+       
+        <input type="text" id="input" value="0"/><br>
+        <div class="div">
+        <button id="xyz" onclick="calc('sqr')">x<sup>2</sup></button>
+        <button id="x2" onclick="calc('sqr3')">x<sup>3</sup></button><br>
+        <button id="vish" onclick="calc('1')">1</button>
+        <button id="two" onclick="calc('2')">2</button>
+        <button id="three" onclick="calc('3')">3</button>
+        <button id="pluse" onclick="calc('+')">+</button><br>
+        <button id="four" onclick="calc('4')">4</button>
+        <button id="five" onclick="calc('5')">5</button>
+        <button id="six" onclick="calc('6')">6</button>
+        <button id="mainus" onclick="calc('-')">-</button><br>
+        <button id="seven" onclick="calc('7')">7</button>
+        <button id="eight" onclick="calc('8')">8</button>
+        <button id="nine" onclick="calc('9')">9</button>
+        <button id="ten" onclick="calc('0')">0</button><br>
+        <button id="c" onclick="cls('C')">C</button>
+        <button id="c" onclick="rchar('c')">C</button>
+        <button id="equal" onclick="calc('=')">=</button>
+        <button id="percentage" onclick="calc('%')">%</button>
+    </div>
+    <script>
+        function calc(n){
+            switch(n){
+                case "sqr":
+                    var input=document.getElementById('input').value;
+                    document.getElementById('input').value=input**2;
+                    break;
+                case "sqr3":    
+                    var input=document.getElementById('input').value;
+                    document.getElementById('input').value=input**3;
+                    break;
+                case "1":
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=1;
+                    break;
+                case "2":
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=2;
+                    break;
+                case "3":
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=3;
+                    break;
+               /* case "+":
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=+;
+                    break;*/ 
+                case "4":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=4;
+                    break; 
+                    case "5":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=5;
+                    break;
+                    case "6":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=6;
+                    break;
+                  /* case "-":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=-;
+                    break;*/
+                    case "7":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=7;
+                    break;
+                    case "8":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=8;
+                    break;
+                    case "9":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=9;
+                    break;
+                    /*case ".":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=.;
+                    break;
+                    case "C":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=C;
+                    break; 
+                    case "%":                   
+                var input=document.getElementById('input').value;
+                    document.getElementById('input').value=%;
+                    break; */ 
+                default:
+                    var input=document.getElementById('input').value;
+                    document.getElementById('input').value=eval(input);
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
